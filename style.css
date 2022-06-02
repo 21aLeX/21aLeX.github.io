@@ -32,6 +32,9 @@ button:hover{
   box-shadow: 0 0 10px 0  rgb(196,209,220) inset, 0 0 10px 4px rgb(75, 0, 130);
   transition: all 150ms ease-in-out;
 }
+a{
+  text-decoration: none;
+}
 .head{
     position: relative;
     height: 40%;
@@ -244,7 +247,6 @@ li.text._active{
 }
 .linkProject{
   position: relative;
-  margin-top: 100px;
   bottom: 0px;
   text-align: right;
   
