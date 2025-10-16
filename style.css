@@ -5,7 +5,10 @@ body{
   height: 100%;
   width: 100%;
   overflow: auto; 
-  overflow-x: hidden
+  overflow-x: hidden;
+}
+#app{
+  height: max-content;
 }
 ul{
   margin-left: auto;
@@ -35,53 +38,7 @@ button:hover{
 a{
   text-decoration: none;
 }
-.head{
-    position: relative;
-    height: 40%;
-    background-image: url('http://zakazposterov.ru/fotooboi/z/fotooboi-505-203-abstraktsiya-zakazposterov-ru_z.jpg');
-    /* background-image: url('https://funart.pro/uploads/posts/2020-04/1587646399_41-p-besshovnie-foni-dlya-saitov-116.jpg'); */
-    background-size: contain;
-}
-.photo{
-  position: relative;
-  background-image: url('https://avatars.mds.yandex.net/get-kinopoisk-post-img/1345014/95e44cfe0abaddb03e43181d31a9f788/960x540');
-  width: 300px;
-  height: 300px;  
-  border: solid white;
-  border-width: medium;
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  margin-top: -150px;
-  margin-left: auto;
-  margin-right: auto;  
-}
-.title{
-  transform: translate(0px, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-  position: relative;
-  text-align: center;
-  font-family: 'Open Sans',Arial,sans-serif;
-  font-weight: 600;
-  color: #000;
-  font-size: 230%;   
-}
-.title._active{  
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
-.vacancy{
-  position: relative;
-  text-align: center;
-  font-family: 'Open Sans',Arial,sans-serif;
-  font-weight: 300;
-  color: #000;
-  font-size: 100%; 
-  margin-top: 10px;
-}
+
 .link{  
   margin-left: auto;
   margin-right: auto; 

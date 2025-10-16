@@ -1,3 +1,21 @@
+function loadComponent(filePath, containerId) {
+    return fetch(filePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Ошибка загрузки: ${response.statusText}`);
+            }
+            return response.text();
+        })
+        .then(html => {
+            const container = document.getElementById(containerId);
+            container.innerHTML += html; // Добавляем загруженный HTML
+        })
+        .catch(error => {
+            console.error(`Ошибка при загрузке ${filePath}:`, error); // Логируем ошибку
+        });
+}
+
+loadComponent('./components/info/info.html', 'app');
 setTimeout(()=>{
     animOnScroll();
 }, 300);
