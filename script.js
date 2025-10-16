@@ -16,6 +16,7 @@ function loadComponent(filePath, containerId) {
 }
 
 loadComponent('./components/info/info.html', 'app');
+loadComponent('./components/contacts/contacts.html', 'app');
 setTimeout(()=>{
     animOnScroll();
 }, 300);

@@ -1,0 +1,21 @@
+.link{  
+  margin-left: auto;
+  margin-right: auto; 
+  position: relative;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.messenger{
+  position: relative;  
+  width: 45px;
+  height: 45px;  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.messenger:hover{  
+  transform: scale(1.1)
+}

@@ -1,22 +1,28 @@
-
-body{
+body {
   margin: 0;
   position: absolute;
   height: 100%;
   width: 100%;
-  overflow: auto; 
+  overflow: auto;
   overflow-x: hidden;
+  background-color: #0d1117;
 }
-#app{
-  height: max-content;
+
+#app {
+  position: relative;
+  background-image: url('../../assets/header.svg');
+  background-size: cover;
+  padding: 20px;
 }
-ul{
+
+ul {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
   margin-bottom: 0%;
 }
-button{
+
+button {
   color: white;
   border: 2px solid rgb(75, 0, 130);
   background-color: rgb(75, 0, 130);
@@ -28,59 +34,45 @@ button{
   margin-bottom: 0;
   padding: 1.2em 2.8em;
 }
-button:hover{
+
+button:hover {
   border-color: rgb(75, 0, 130);
-  background-color: rgb(196,209,220);
-  color: #fff;  
-  box-shadow: 0 0 10px 0  rgb(196,209,220) inset, 0 0 10px 4px rgb(75, 0, 130);
+  background-color: rgb(196, 209, 220);
+  color: #fff;
+  box-shadow: 0 0 10px 0 rgb(196, 209, 220) inset, 0 0 10px 4px rgb(75, 0, 130);
   transition: all 150ms ease-in-out;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
-.link{  
-  margin-left: auto;
-  margin-right: auto; 
-  position: relative;
-  text-align: center;
-}
-.messenger{
-  position: relative;  
-  width: 45px;
-  height: 45px;  
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 20%;
-}
-.messenger:hover{  
-  box-shadow:  0 0 10px 2px rgb(75, 0, 130);
-  transition: all 150ms ease-in-out;
-}
-.text{
+
+.text {
   text-align: center;
   width: 30%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-  font-family: 'Open Sans',Arial,sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
   color: #000;
   /* font-size: 200%; */
 }
 
-.fondOne, .fondTwo{
+.fondOne,
+.fondTwo {
   position: relative;
   width: auto;
   height: auto;
   margin: 0%;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: rgb(196,209,220) ;
+  background-color: rgb(196, 209, 220);
   text-align: center;
 }
-.blockJob1{
+
+.blockJob1 {
   position: relative;
   text-align: right;
   width: 50%;
@@ -89,85 +81,97 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
-.blockJob2{
+
+.blockJob2 {
   text-align: left;
 }
-.caseJob1{
+
+.caseJob1 {
   position: relative;
   width: 45%;
   transform: scale(0);
   transition: all 0.5s ease 0s;
 }
-.caseJob1._active{
+
+.caseJob1._active {
   transform: scale(1);
 }
 
-.caseJob2{
+.caseJob2 {
   position: relative;
   margin-left: auto;
 }
-.nameJob{
-  font-family: 'Open Sans',Arial,sans-serif;
+
+.nameJob {
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 200;
   color: rgb(75, 0, 130);
   font-size: 160%;
 }
-.nameVacancy{
+
+.nameVacancy {
   font-style: italic;
-  font-family: 'Open Sans',Arial,sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 200;
   color: rgb(75, 0, 130);
   font-size: 100%;
 }
-.work{
+
+.work {
   font-style: italic;
   font-weight: 200;
   color: rgb(0, 0, 0);
   font-size: 100%;
 }
-.circle{
+
+.circle {
   position: absolute;
   width: 20px;
   height: 20px;
   background-color: rgb(75, 0, 130);
   border-radius: 50%;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   margin: 20px auto 0 auto;
 }
-.rectangle{  
+
+.rectangle {
   position: absolute;
   width: 5px;
   height: 100px;
   background-color: rgb(75, 0, 130);
-  left:0;
-  right:0;
-  top:45px;
-  bottom:-15px;
-  margin: auto; 
- height: initial;
+  left: 0;
+  right: 0;
+  top: 45px;
+  bottom: -15px;
+  margin: auto;
+  height: initial;
 }
-.fondTwo{
+
+.fondTwo {
   background-color: white;
 }
-li.text{
+
+li.text {
   text-align: left;
   margin-bottom: 10px;
   font-style: italic;
   font-size: 100%;
   font-weight: 100;
-  transform: translate(120%,0px);
+  transform: translate(120%, 0px);
   opacity: 0;
   transition: all 2.5s ease 0s;
 }
-li.text._active{
-  
-  transform: translate(0px,0px);
+
+li.text._active {
+
+  transform: translate(0px, 0px);
   opacity: 1;
 }
-.container{
+
+.container {
   display: flex;
   position: relative;
   width: 60%;
@@ -175,14 +179,15 @@ li.text._active{
   margin-top: 10px;
 
 }
-.draft{
+
+.draft {
   flex-basis: 0;
   flex-grow: 1;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  background-color: rgb(196,209,220);
+  background-color: rgb(196, 209, 220);
   margin-left: 1%;
   margin-right: 1%;
   text-align: left;
@@ -190,26 +195,30 @@ li.text._active{
   opacity: 0;
 }
 
-.draft._active{
+.draft._active {
   transition: all 2s ease 0s;
   opacity: 1;
 }
-.nameProject{
+
+.nameProject {
   position: relative;
   margin-bottom: 10px;
   color: rgb(75, 0, 130);
-  
+
 }
-.textProject{
+
+.textProject {
   color: black;
   font-size: 140%;
 }
-.linkProject{
+
+.linkProject {
   /* bottom: 0px; */
   text-align: right;
-  
+
 }
-.portrait{
+
+.portrait {
   position: relative;
   margin: 0;
   min-width: 150px;
@@ -217,16 +226,18 @@ li.text._active{
   width: 30%;
   height: auto;
   background-image: url('https://avatars.mds.yandex.net/get-kinopoisk-post-img/1345014/95e44cfe0abaddb03e43181d31a9f788/960x540');
-  background-size:cover;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   transition: all 0.8s ease 0s;
 }
-.portrait._active{
- box-shadow:10px 10px 2px 1px rgba(0, 0, 0, .3); 
- border: 1px solid rgb(196,209,220);
+
+.portrait._active {
+  box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .3);
+  border: 1px solid rgb(196, 209, 220);
 }
-.biography{
+
+.biography {
   position: relative;
   flex-basis: 50%;
   opacity: 0.6;
@@ -237,12 +248,14 @@ li.text._active{
   font-size: 112.50%;
   line-height: 1.55;
 }
-.footer{
+
+.footer {
   width: 100%;
   height: 10%;
 
 }
-.childFooter{
+
+.childFooter {
   width: 100%;
   height: 100%;
   color: black;
@@ -251,65 +264,83 @@ li.text._active{
   background-size: cover;
   background-size: contain;
 }
-div.contacts{ 
-  font-size: 80%; 
+
+div.contacts {
+  font-size: 80%;
   position: absolute;
   left: 85%;
   text-align: left;
 }
-div.coopir{
+
+div.coopir {
   margin: 0;
   position: absolute;
   left: 25%;
   text-align: left;
 }
-@media (max-width: 992px){
-  
-.blockJob1{
-  text-align: left;
-  margin-left: auto;
-}
-.caseJob1, .caseJob2{
-  width: 90%;  
-  margin-left: 10%;
-}
-.circle{
-  margin: 20px 0 0;
-}
-.rectangle{
-  margin-left: 7.5px;
-}
+
+@media (max-width: 992px) {
+
+  .blockJob1 {
+    text-align: left;
+    margin-left: auto;
+  }
+
+  .caseJob1,
+  .caseJob2 {
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .circle {
+    margin: 20px 0 0;
+  }
+
+  .rectangle {
+    margin-left: 7.5px;
+  }
 
 }
 
 
-@media (max-width: 1280px) and (orientation: landscape), (max-width: 1280px){
-  .text{
+@media (max-width: 1280px) and (orientation: landscape),
+(max-width: 1280px) {
+  .text {
     width: 80%;
     font-size: 140%;
   }
-  .vacancy, .nameJob{
+
+  .vacancy,
+  .nameJob {
     font-size: 160%;
   }
-  .title{
+
+  .title {
     font-size: 200%;
   }
-  .nameVacancy, .work{
+
+  .nameVacancy,
+  .work {
     font-size: 140%;
   }
-  .container, .draft{
+
+  .container,
+  .draft {
     display: block;
     width: 95%;
   }
-  .draft{
-    margin-top: 10px;  
+
+  .draft {
+    margin-top: 10px;
     padding: 10px;
   }
-  .text.biography{
+
+  .text.biography {
     width: 100%;
     margin: 0;
   }
-  .portrait{
+
+  .portrait {
     margin-left: auto;
     margin-right: auto;
   }
