@@ -6,21 +6,38 @@ body {
   overflow: auto;
   overflow-x: hidden;
   background-color: #0d1117;
+  scroll-behavior: smooth;
+
+  &::after {
+    content: "";
+    background-image: url('./assets/js.png');
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.3;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+html{
+  scroll-behavior: smooth;
 }
 
 #app {
-  position: relative;
-  background-image: url('../../assets/header.svg');
-  background-size: cover;
-  padding: 20px;
+  padding: var(--margin-20);
+  color: var(--white-color);
+
+  @media (max-width:600px) {
+    padding: var(--margin-10);
+  }
 }
 
-ul {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  margin-bottom: 0%;
-}
+
 
 button {
   color: white;
@@ -45,19 +62,6 @@ button:hover {
 
 a {
   text-decoration: none;
-}
-
-
-.text {
-  text-align: center;
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: 300;
-  color: #000;
-  /* font-size: 200%; */
 }
 
 .fondOne,
@@ -154,23 +158,6 @@ a {
   background-color: white;
 }
 
-li.text {
-  text-align: left;
-  margin-bottom: 10px;
-  font-style: italic;
-  font-size: 100%;
-  font-weight: 100;
-  transform: translate(120%, 0px);
-  opacity: 0;
-  transition: all 2.5s ease 0s;
-}
-
-li.text._active {
-
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
-
 .container {
   display: flex;
   position: relative;
@@ -259,7 +246,7 @@ li.text._active {
   width: 100%;
   height: 100%;
   color: black;
-  background-image: url('http://zakazposterov.ru/fotooboi/z/fotooboi-505-203-abstraktsiya-zakazposterov-ru_z.jpg');
+  /* background-image: url('http://zakazposterov.ru/fotooboi/z/fotooboi-505-203-abstraktsiya-zakazposterov-ru_z.jpg'); */
   opacity: 0.4;
   background-size: cover;
   background-size: contain;
@@ -300,48 +287,4 @@ div.coopir {
     margin-left: 7.5px;
   }
 
-}
-
-
-@media (max-width: 1280px) and (orientation: landscape),
-(max-width: 1280px) {
-  .text {
-    width: 80%;
-    font-size: 140%;
-  }
-
-  .vacancy,
-  .nameJob {
-    font-size: 160%;
-  }
-
-  .title {
-    font-size: 200%;
-  }
-
-  .nameVacancy,
-  .work {
-    font-size: 140%;
-  }
-
-  .container,
-  .draft {
-    display: block;
-    width: 95%;
-  }
-
-  .draft {
-    margin-top: 10px;
-    padding: 10px;
-  }
-
-  .text.biography {
-    width: 100%;
-    margin: 0;
-  }
-
-  .portrait {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
