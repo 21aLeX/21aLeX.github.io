@@ -1,0 +1,103 @@
+.container-skils {
+    display: flex;
+    background-color: var(--black-color);
+    gap: 20px;
+    flex-direction: column;
+    position: relative;
+    box-sizing: content-box;
+    margin: 0 calc(-1 * var(--margin-20));
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    padding: var(--margin-20);
+
+    @media (max-width:600px) {
+        margin: 0 calc(-1 * var(--margin-10));
+        padding: var(--margin-10);
+    }
+}
+
+.skils {
+    background-attachment: scroll, local;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --color-1: #C7B2FF;
+    --color-2: #A1EEFF;
+    --color-3: #EED677;
+    --color-4: #A52A2A;
+    --color-5: #4EF483;
+    --color-6: #7C4EFF;
+}
+
+li {
+    &:has(.color-1) {
+        &::marker {
+            color: var(--color-1);
+        }
+    }
+
+    &:has(.color-2) {
+        &::marker {
+            color: var(--color-2);
+        }
+    }
+
+    &:has(.color-3) {
+        &::marker {
+            color: var(--color-3);
+        }
+    }
+
+    &:has(.color-4) {
+        &::marker {
+            color: var(--color-4);
+        }
+    }
+
+    &:has(.color-5) {
+        &::marker {
+            color: var(--color-5);
+        }
+    }
+
+    &:has(.color-6) {
+        &::marker {
+            color: var(--color-6);
+        }
+    }
+}
+
+.chart {
+    position: relative;
+    width: 60vw;
+    max-width: 300px;
+    min-width: 50px;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: conic-gradient(var(--color-1) 18%,
+            var(--color-2) 18% 36%,
+            var(--color-3) 36% 56%,
+            var(--color-4) 56% 69%,
+            var(--color-5) 69% 89%,
+            var(--color-6) 89% 100%);
+}
+
+.chart--donut {
+    padding: 60px;
+    background: conic-gradient(var(--color-1) 18%,
+            var(--color-2) 18% 36%,
+            var(--color-3) 36% 56%,
+            var(--color-4) 56% 69%,
+            var(--color-5) 69% 89%,
+            var(--color-6) 89% 100%);
+    mask:
+        linear-gradient(#ffffff 0 0) content-box,
+        linear-gradient(#ffffff 0 0);
+    mask-composite: exclude;
+}
