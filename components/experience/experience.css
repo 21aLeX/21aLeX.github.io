@@ -1,0 +1,7 @@
+.experience {
+    display: flex;
+
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+    }
+}
