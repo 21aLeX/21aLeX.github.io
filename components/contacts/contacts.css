@@ -1,4 +1,5 @@
 .link{  
+  background-color: var(--black-color);
   margin-left: auto;
   margin-right: auto; 
   position: relative;
@@ -6,7 +7,7 @@
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 .messenger{
   position: relative;  

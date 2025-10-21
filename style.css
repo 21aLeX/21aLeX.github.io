@@ -31,9 +31,11 @@ html{
 #app {
   padding: var(--margin-20);
   color: var(--white-color);
+  padding-bottom: 0;
 
   @media (max-width:600px) {
     padding: var(--margin-10);
+  padding-bottom: 0;
   }
 }
 

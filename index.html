@@ -3,194 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet">  
-    <link href="global-var.css" rel="stylesheet">  
+    <link href="style.css" rel="stylesheet">
+    <link href="global-var.css" rel="stylesheet">
     <link href="./components/info/info.css" rel="stylesheet">
     <link href="./components/contacts/contacts.css" rel="stylesheet">
     <link href="./components/description/description.css" rel="stylesheet">
     <link href="./components/skils/skils.css" rel="stylesheet">
     <link href="./components/experience/experience.css" rel="stylesheet">
+    <link href="./components/education/education.css" rel="stylesheet">
+    <link href="./components/projects/projects.css" rel="stylesheet">
+    <link href="./components/footer/footer.css" rel="stylesheet">
     <script type="module" src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
 <body>
     <div id="app">
-    </div>
-    <!-- учеба -->
-    <div class="fondTwo">
-        <div class="title _animItems">Образование</div>
-        <div class="blockJob1">
-            <div class="caseJob1 _animItems">
-                <div class="nameJob">Бурятский государственный университет, Улан-Удэ</div>
-                <div class="nameVacancy">2013-2017</div>
-                <div class="work">Институт математики и информатики. Прикладная информатика.</div>
-            </div>
-
-            <div class="circle"></div>
-            <div class="rectangle"></div>
-        </div>
-
-        <div class="blockJob1 blockJob2">
-            <div class="caseJob1 caseJob2 _animItems">
-                <div class="nameJob">Бурятский государственный университет, Улан-Удэ</div>
-                <div class="nameVacancy">2017-2019</div>
-                <div class="work">Институт математики и информатики. Математическое моделирование и разработка по.
-                </div>
-
-            </div>
-            <div class="circle"></div>
-            <div class="rectangle"></div>
-        </div>
-
-    </div>
-    <!-- проекты -->
-    <div class="fondTwo">
-        <div class=" title project _animItems">Проекты</div>
-        <div class="container">
-            <div class="draft _animItems">
-                <div class="nameJob nameProject">Сайт "Пожарный магазин"</div>
-                <div class="nameProject textProject">Адаптивный кроссбраузерный сайт.
-                    <br>
-                    Html/CSS, JavaScript, Bootstrap, jQuery.
-                </div>
-                <div class="linkProject">
-                    <a href="https://01rb.ru" target="_blank"><button>Смотреть</button></a>
-                </div>
-            </div>
-
-            <div class="draft _animItems">
-                <div class="nameJob nameProject"><a href="https://github.com/21aLeX/21aLeX.github.io-languageCheck"
-                        target="_blank">Фильтр курсов по диапазону цен</a></div>
-                <div class="nameProject textProject">Тестовое задание. Имеется список курсов с интервалом цен, при
-                    вводе
-                    пользователем
-                    граничного значения "от" или "до" определяется входит ли курс в данный диапазон.
-                    <br>
-                    Html/CSS, JavaScript.
-                </div>
-                <div class="linkProject">
-                    <a href="https://21alex.github.io/21aLeX.github.io-languageCheck/" target="_blank"><button>Смотреть
-                            Demo</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-
-            <div class="draft _animItems">
-                <div class="nameJob nameProject"><a href="https://github.com/21aLeX/contactList" target="_blank">SPA
-                        по
-                        макету Figma</a></div>
-                <div class="nameProject textProject">Таблица с данными пользователей также с возможностью поиска и
-                    сортировки. Данный подтягиваются с
-                    <a href="https://jsonplaceholder.typicode.com/posts" target="_blank"> API </a>.
-                    Сам <a
-                        href="https://www.figma.com/file/amcWeZhjaZ0eSyYiSNG6vN/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B?node-id=0%3A1"
-                        target="_blank">макет</a>. Постраничная пагинация, на одной странице только 10 записей.
-                    Переключение между страницами происходит без перезагрузки. При нажатии на заголовки столбцов
-                    происходит сортировка.
-                    <br>
-                    Html/CSS, JavaScript, React, Redux, UI MUI.
-                </div>
-                <div class="linkProject">
-                    <a href="https://21alex.github.io/21aLeX.github.io-contactList/" target="_blank"><button>Смотреть
-                            Demo</button></a>
-                </div>
-            </div>
-            <div class="draft _animItems">
-                <div class="nameJob nameProject">
-                    <a href="https://github.com/21aLeX/communications" target="_blank">Приложение личный
-                        кабинет.</a>
-                </div>
-                <div class="nameProject textProject">Состоит из страницы входа и страницы со списком контактов. Вход
-                    под
-                    любым логином и паролем.
-                    Страница со списком доступна только после авторизации. На странице имеется возможность
-                    добавлять\удалять\редактировать контакты, а также есть поиск.
-                    Добавленные контакты после выхода сохраняются в sessionStorage.
-                    <br>
-                    Html/CSS, JavaScript, React, Redux, UI MUI.
-                </div>
-                <div class="linkProject">
-                    <a href="https://21alex.github.io/21aLeX.github.io-communications/" target="_blank"><button>Смотреть
-                            Demo</button></a>
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <div class="container">
-            <div class="draft _animItems">
-                <div class="nameJob nameProject"><a href="https://github.com/21aLeX/string" target="_blank">Строка</a>
-                </div>
-                <div class="nameProject textProject"> Есть кнопка "+", которая добавляет рандомную строку. Так же
-                    имеется строка поиска по списку данных строк.
-                    <br>
-                    Html/CSS, JavaScript, React.
-                </div>
-                <div class="linkProject">
-                    <a href="https://21alex.github.io/21aLeX.github.io-string/" target="_blank"><button>Смотреть
-                            Demo</button></a>
-                </div>
-            </div>
-            <div class="draft _animItems">
-                <div class="nameJob nameProject"><a href="https://github.com/21aLeX/weather" target="_blank">SPA
-                        график
-                        погоды</a></div>
-                <div class="nameProject textProject">Веб-приложение, где полученные по API (OpenWeatherMap) данные
-                    выводятся на графике температура, влажность и атмосферное давление в ближайшие 4-5 дней.
-                    Есть возможность выбора города.
-                    <br>
-                    Html/CSS, JavaScript, React.
-                </div>
-                <div class="linkProject">
-                    <a href="https://21alex.github.io/21aLeX.github.io-weather/" target="_blank"><button>Смотреть
-                            Demo</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-
-            <div class="draft _animItems">
-                <div class="nameJob nameProject"><a href="https://github.com/21aLeX/string" target="_blank">Карточки</a>
-                </div>
-                <div class="nameProject textProject"> Имеется три карточки товара, которые можно выбрать с помощью
-                    нажатия по ним либо по слову "купить".
-                    Выбор применяется после того как курсор уйдет с элемента.
-                    Отмена происходит после повторного нажатия.
-                    <br>
-                    Html/CSS, JavaScript, React.
-                </div>
-                <div class="linkProject">
-                    <a href="https://21alex.github.io/21aLeX.github.io-meow/" target="_blank"><button>Смотреть
-                            Demo</button></a>
-                </div>
-            </div>
-
-            <div class="draft _animItems">
-                <div class="nameJob nameProject"><a href="https://github.com/21aLeX/21aLeX.github.io-QSOFT"
-                        target="_blank">Адаптивная страница с партнёрами</a>
-                </div>
-                <div class="nameProject textProject"> На странице блок с логотипом, поиском и пользователем.
-                    Далее блок с "партнерами".
-                    Блоки пеерстраиваются в соответствии с размерами окна.
-                    <br>
-                    Html/CSS.
-                </div>
-                <div class="linkProject">
-                    <a href="https://21alex.github.io/21aLeX.github.io-QSOFT/" target="_blank"><button>Смотреть
-                            Demo</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="text coopir">© Copyright 2025</div>
-        <div class="childFooter"></div>
-    </div>
-
     </div>
 </body>
 

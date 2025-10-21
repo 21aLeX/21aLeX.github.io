@@ -19,8 +19,11 @@ const components = [
     './components/info/info.html',
     './components/contacts/contacts.html',
     './components/description/description.html',
+    './components/experience/experience.html',
     './components/skils/skils.html',
-    './components/experience/experience.html'
+    './components/projects/projects.html',
+    './components/education/education.html',
+    './components/footer/footer.html'
 ];
 
 async function loadComponents() {
