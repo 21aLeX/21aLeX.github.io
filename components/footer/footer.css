@@ -1,0 +1,13 @@
+footer{
+    
+  position: relative;
+  background-image: url('../../assets/footer.svg');
+  background-size: cover;
+  height: 100px;
+  padding-top: 20px;
+  margin: -20px -20px 0 -20px;
+  @media (max-width:600px) {
+    padding-top: 10px;
+  margin: -10px -10px 0 -10px;
+  }
+}
