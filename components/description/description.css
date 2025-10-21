@@ -4,7 +4,6 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 300;
+    padding-bottom: 10px;
     color: var(--white-color);
 }
