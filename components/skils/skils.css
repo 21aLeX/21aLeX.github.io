@@ -38,6 +38,60 @@
     --color-6: #7C4EFF;
 }
 
+.color-1 {
+    stroke: var(--color-1);
+
+    &.active {
+        filter: drop-shadow(0 4px 8px var(--color-1));
+        stroke-width: 22px;
+    }
+}
+
+.color-2 {
+    stroke: var(--color-2);
+
+    &.active {
+        filter: drop-shadow(0 4px 8px var(--color-2));
+        stroke-width: 22px;
+    }
+}
+
+.color-3 {
+    stroke: var(--color-3);
+
+    &.active {
+        filter: drop-shadow(0 4px 8px var(--color-3));
+        stroke-width: 22px;
+    }
+}
+
+.color-4 {
+    stroke: var(--color-4);
+
+    &.active {
+        filter: drop-shadow(0 4px 8px var(--color-4));
+        stroke-width: 22px;
+    }
+}
+
+.color-5 {
+    stroke: var(--color-5);
+
+    &.active {
+        filter: drop-shadow(0 4px 8px var(--color-5));
+        stroke-width: 22px;
+    }
+}
+
+.color-6 {
+    stroke: var(--color-6);
+
+    &.active {
+        filter: drop-shadow(0 4px 8px var(--color-6));
+        stroke-width: 22px;
+    }
+}
+
 li {
     &:has(.color-1) {
         &::marker {
@@ -74,34 +128,18 @@ li {
             color: var(--color-6);
         }
     }
+
+    span.active {
+        text-decoration: underline var(--white-color);
+    }
 }
 
-.chart {
-    position: relative;
-    width: 60vw;
-    max-width: 300px;
-    min-width: 50px;
-    box-sizing: border-box;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background: conic-gradient(var(--color-1) 18%,
-            var(--color-2) 18% 36%,
-            var(--color-3) 36% 56%,
-            var(--color-4) 56% 69%,
-            var(--color-5) 69% 89%,
-            var(--color-6) 89% 100%);
+
+.segment {
+    pointer-events: stroke;
 }
 
-.chart--donut {
-    padding: 60px;
-    background: conic-gradient(var(--color-1) 18%,
-            var(--color-2) 18% 36%,
-            var(--color-3) 36% 56%,
-            var(--color-4) 56% 69%,
-            var(--color-5) 69% 89%,
-            var(--color-6) 89% 100%);
-    mask:
-        linear-gradient(#ffffff 0 0) content-box,
-        linear-gradient(#ffffff 0 0);
-    mask-composite: exclude;
+#center-blocker {
+    pointer-events: all;
+    cursor: default;
 }

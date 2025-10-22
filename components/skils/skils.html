@@ -1,40 +1,45 @@
-<!-- Навыки -->
 <div class="container-skils">
     <h3>Скилы:</h3>
     <div class="skils">
-        <div class="panel__chart chart chart--donut"></div>
+        <svg width="400" height="400" viewBox="-20 -20 240 240">
+            <g transform="rotate(-90 100 100)">
+                <circle id="segment1" class="segment color-1" cx="100" cy="100" r="90" fill="transparent"
+                    stroke-width="20" stroke-dasharray="94.2 471.0" />
+                <circle id="segment2" class="segment color-2" cx="100" cy="100" r="90" fill="transparent"
+                    stroke-width="20" stroke-dasharray="94.2 471.0" stroke-dashoffset="94.2" />
+                <circle id="segment3" class="segment color-3" cx="100" cy="100" r="90" fill="transparent"
+                    stroke-width="20" stroke-dasharray="94.2 471.0" stroke-dashoffset="188.4" />
+                <circle id="segment4" class="segment color-4" cx="100" cy="100" r="90" fill="transparent"
+                    stroke-width="20" stroke-dasharray="94.2 471.0" stroke-dashoffset="282.6" />
+                <circle id="segment5" class="segment color-5" cx="100" cy="100" r="90" fill="transparent"
+                    stroke-width="20" stroke-dasharray="94.2 471.0" stroke-dashoffset="376.8" />
+                <circle id="segment6" class="segment color-6" cx="100" cy="100" r="90" fill="transparent"
+                    stroke-width="20" stroke-dasharray="94.2 471.0" stroke-dashoffset="471.0" />
+                <!-- Прозрачный круг для блокировки событий в центре -->
+                <circle id="center-blocker" cx="100" cy="100" r="70" fill="transparent" stroke="transparent"
+                    stroke-width="0" pointer-events="all" />
+            </g>
+        </svg>
+
         <ul class="panel__keys keys">
             <li class="key">
-                <span class="key__choice color-1">Node.js, Electron, Git, Webpack, Jest (~3г)</span>
+                <span id="key-1" class="color-1">Node.js, Electron, Git, Webpack, Jest (~3г)</span>
             </li>
             <li class="key">
-                <span class="key__choice color-2">React, Redux Toolkit (~3г)</span>
+                <span id="key-2" class="color-2">React, Redux Toolkit (~3г)</span>
             </li>
             <li class="key">
-                <span class="key__choice color-3">JavaScript (4г)</span>
+                <span id="key-3" class="color-3">JavaScript (4г)</span>
             </li>
             <li class="key">
-                <span class="key__choice color-4">Angular, AngularJs (~2г)</span>
+                <span id="key-4" class="color-4">Angular, AngularJs (~2г)</span>
             </li>
             <li class="key">
-                <span class="key__choice color-5">HTML5/CSS3 (4г)</span>
+                <span id="key-5" class="color-5">HTML5/CSS3 (4г)</span>
             </li>
             <li class="key">
-                <span class="key__choice color-6">TypeScript (~2г)</span>
+                <span id="key-6" class="color-6">TypeScript (~2г)</span>
             </li>
         </ul>
     </div>
 </div>
-</div>
-
-
-<!-- <div class="skils">
-        <div class="title _animItems">Скилы</div>
-        <ul>
-            <li class="text _animItems">JavaScript/TypeScript</li>
-            <li class="text _animItems">React, Redux Toolkit</li>
-            <li class="text _animItems">Angular, AngularJs</li>
-            <li class="text _animItems">HTML5/CSS3</li>
-            <li class="text _animItems">Node.js, Electron, Git, Webpack, Jest</li>
-        </ul>
-    </div> -->

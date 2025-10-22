@@ -1,3 +1,5 @@
+import initializeInteractivity from './components/skils/skils.js'
+
 function loadComponent(filePath, containerId) {
     return fetch(filePath)
         .then(response => {
@@ -30,6 +32,7 @@ async function loadComponents() {
     for (const component of components) {
         await loadComponent(component, 'app');
     }
+    initializeInteractivity();
 }
 
 loadComponents();
